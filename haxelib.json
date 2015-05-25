@@ -1,0 +1,12 @@
+{
+  "name": "cordova",
+  "url": "https://github.com/fponticelli/cordova",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["cordova", "phone-gap"],
+  "description": "Cordova extern definitions.",
+  "releasenote": "First release.",
+  "version": "0.0.1",
+  "contributors": ["fponticelli"],
+  "dependencies": {}
+}
