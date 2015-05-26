@@ -3,6 +3,9 @@ package cordova;
 import js.Browser.*;
 import cordova.file.*;
 
+/*
+TODO remove Dynamic and type error properly
+ */
 class Cordova {
   public static function onDeviceReady(handler : Void -> Void)
     document.addEventListener("deviceready", handler, false);
@@ -15,4 +18,7 @@ class Cordova {
 
   inline public static function requestPermanentFileSystem(size : Int, handler : FileSystem -> Void, error : Dynamic -> Void)
     return requestFileSystem(LocalFileSystem.PERMANENT, size, handler, error);
+
+  inline public static function resolveLocalFileSystemURL(path : String, handler : FileEntry -> Void, error : Dynamic -> Void)
+    (untyped window.resolveLocalFileSystemURL)(path, handler, error);
 }
