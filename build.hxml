@@ -1,0 +1,17 @@
+-cp src
+-js x.js
+--no-output
+
+cordova.Cordova
+cordova.file.DirectoryEntry
+cordova.file.DirectoryReader
+cordova.file.Entry
+cordova.file.File
+cordova.file.FileEntry
+cordova.file.FileError
+cordova.file.FileReader
+cordova.file.FileSystem
+cordova.file.FileWriter
+cordova.file.LocalFileSystem
+cordova.file.Metadata
+cordova.file.ReadyState
