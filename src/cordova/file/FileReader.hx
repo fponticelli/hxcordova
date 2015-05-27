@@ -1,6 +1,6 @@
 package cordova.file;
 
-//@:native("cordova.file.FileReader")
+@:native("FileReader")
 extern class FileReader {
   var readyState : ReadReadyState;
   var result : String;
@@ -13,9 +13,9 @@ extern class FileReader {
 
   function new() : Void;
   function abort() : Void;
-  function readAsDataURL(entry : FileEntry) : Void;
-  function readAsArrayBuffer(entry : FileEntry) : Void;
-  function readAsBinaryString(entry : FileEntry) : Void;
-  function readAsText(entry : FileEntry, ?encoding : String) : Void;
+  function readAsDataURL(entry : File) : Void;
+  function readAsArrayBuffer(entry : File) : Void;
+  function readAsBinaryString(entry : File) : Void;
+  function readAsText(entry : File, ?encoding : String) : Void;
   var onloadended : Dynamic -> Void; // TODO type event correctly
 }
