@@ -16,6 +16,6 @@ extern class Entry {
 }
 
 typedef EntryOptions = {
-  create : Bool,
-  exclusive : Bool
+  ?create : Bool,
+  ?exclusive : Bool
 }
