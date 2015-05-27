@@ -2,7 +2,7 @@ package cordova.file;
 
 //@:native("cordova.file.FileReader")
 extern class FileReader {
-  var readyState : ReadyState;
+  var readyState : ReadReadyState;
   var result : String;
   var error : Int; // FileError code
   var onloadstart : Dynamic -> Void;
