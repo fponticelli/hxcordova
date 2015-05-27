@@ -19,6 +19,6 @@ class Cordova {
   inline public static function requestPersistentFileSystem(size : Int, handler : FileSystem -> Void, error : Dynamic -> Void)
     return requestFileSystem(LocalFileSystem.PERSISTENT, size, handler, error);
 
-  inline public static function resolveLocalFileSystemURL(path : String, handler : FileEntry -> Void, error : Dynamic -> Void)
+  inline public static function resolveLocalFileSystemURL(path : String, handler : DirectoryEntry -> Void, error : Dynamic -> Void)
     (untyped window.resolveLocalFileSystemURL)(path, handler, error);
 }
